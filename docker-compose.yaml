@@ -1,0 +1,10 @@
+version: '2'
+services:
+  desktop:
+    image: 'syanyong/ros-melodic-desktop:0.2'
+    ports:
+      - '6080:80'
+    volumes:
+      - './catkin_ws:/root/catkin_ws'
+      - './.bashrc:/root/.bashrc'
+    tty: true
